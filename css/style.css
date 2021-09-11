@@ -1,8 +1,20 @@
-* {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: inherit !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 body {
   font-family: 'Libre Baskerville', serif;
+  padding: 0;
+  margin: 0;
 }
 body._lock {
   overflow: hidden;
@@ -46,7 +58,7 @@ body._lock {
 }
 .section__home {
   padding-top: 350px;
-  background-image: url(/assets/alena-aenami-dreamer-1k.jpg);
+  background-image: url(../assets/alena-aenami-dreamer-1k.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -256,6 +268,17 @@ body._lock {
 }
 .eng {
   width: 45%;
+}
+pre {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  margin: 0;
+  list-style: none;
 }
 .title {
   font-weight: 700;
