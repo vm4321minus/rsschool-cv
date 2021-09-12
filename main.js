@@ -1,3 +1,4 @@
+
 const bur = document.querySelector('.menu__spline');
 const menu = document.querySelector('.menu__item');
 bur.addEventListener('click', function (e) {
@@ -22,7 +23,7 @@ if (ssl.length > 0) {
         if (menuclick.dataset.goto && document.querySelectorAll(menuclick.dataset.goto)) {
 
             const goto = document.querySelector(menuclick.dataset.goto);
-            const gotolink = goto.getBoundingClientRect().top - scrollY;
+            const gotolink = goto.getBoundingClientRect().top + scrollY;
 
             if (bur.classList.contains('_active')) {
                 document.body.classList.remove('_lock');
