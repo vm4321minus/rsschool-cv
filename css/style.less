@@ -96,7 +96,7 @@ body._lock {
     }
     &__port {
         padding: 52px 0 75px 0;
-        background-color: rgba(52, 13, 228, 0.8);
+        background-color: #2f3238;;
     }
     &__code {
         background-color: pink
@@ -244,14 +244,13 @@ body._lock {
         width: 300px;
         height: 190px;
         border: 4px solid pink;
-        transition: .3s linear;
+        transition: .7s;
 
         &:hover {
-            border: 4px solid purple;
             border-radius: 50px;
+            opacity: .4;
         }
     }
-
 
     &__items {
         display: grid;
@@ -271,8 +270,42 @@ body._lock {
     }
     &__item {
         margin-bottom: 35px;
+
     }
 
+    &__item:hover &__stek {
+        opacity: 1;
+    }
+    &__item:hover &__text {
+        opacity: 1;
+    }
+    &__text {
+        transform: translate(110px, 57px);
+
+        &--clock {
+            transform: translate(126px, 57px) !important;
+        }
+    }
+    &__stek {
+
+        transform: translate(65px, 97px);
+
+        &--mus {
+            transform: translate(56px, 97px) !important;
+        }
+        &--clock {
+            transform: translate(53px, 97px) !important;
+        }
+    }
+
+}
+
+.stek {
+    position: absolute;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    transition: .7s;
+    opacity: 0;
 }
 
 .footer {
@@ -700,4 +733,9 @@ pre code.hljs {
     .menu__item {
         width: 84.8%;
     }
+}
+
+
+ul {
+    padding: 0;
 }

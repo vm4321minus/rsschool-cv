@@ -76,7 +76,7 @@ body._lock {
 }
 .section__port {
   padding: 52px 0 75px 0;
-  background-color: rgba(52, 13, 228, 0.8);
+  background-color: #2f3238;
 }
 .section__code {
   background-color: pink;
@@ -194,11 +194,11 @@ body._lock {
   width: 300px;
   height: 190px;
   border: 4px solid pink;
-  transition: 0.3s linear;
+  transition: 0.7s;
 }
 .port__img:hover {
-  border: 4px solid purple;
   border-radius: 50px;
+  opacity: 0.4;
 }
 .port__items {
   display: grid;
@@ -216,6 +216,34 @@ body._lock {
 }
 .port__item {
   margin-bottom: 35px;
+}
+.port__item:hover .port__stek {
+  opacity: 1;
+}
+.port__item:hover .port__text {
+  opacity: 1;
+}
+.port__text {
+  transform: translate(110px, 57px);
+}
+.port__text--clock {
+  transform: translate(126px, 57px) !important;
+}
+.port__stek {
+  transform: translate(65px, 97px);
+}
+.port__stek--mus {
+  transform: translate(56px, 97px) !important;
+}
+.port__stek--clock {
+  transform: translate(53px, 97px) !important;
+}
+.stek {
+  position: absolute;
+  font-size: 24px;
+  color: #ffffff;
+  transition: 0.7s;
+  opacity: 0;
 }
 .footer {
   background-color: #000;
@@ -535,4 +563,7 @@ pre code.hljs {
   .menu__item {
     width: 84.8%;
   }
+}
+ul {
+  padding: 0;
 }
